@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline';">
+  <title>Daten löschen – Tabiji</title>
+  <!-- Data deletion page for the Google Play data safety form. Content follows
+       the app's privacy policy (assets/legal/*/privacy.md, sections 3, 5, 6, 7, 10);
+       change both together. -->
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 24px;
+      color: #222;
+      line-height: 1.7;
+    }
+    h1 { color: #c0392b; font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; margin-top: 2em; border-bottom: 1px solid #eee; padding-bottom: 4px; }
+    a { color: #c0392b; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid #eee; }
+    .lang-toggle { margin-bottom: 2em; }
+    .lang-toggle label {
+      cursor: pointer; color: #c0392b; font-weight: 600; margin-right: 8px;
+      padding: 4px 10px; border-radius: 6px; border: 1px solid #c0392b;
+    }
+    #lang-de, #lang-en { position: absolute; left: -9999px; }
+    .section-de, .section-en { display: none; }
+    #lang-de:checked ~ .section-de { display: block; }
+    #lang-en:checked ~ .section-en { display: block; }
+    #lang-de:checked ~ .lang-toggle label[for="lang-de"],
+    #lang-en:checked ~ .lang-toggle label[for="lang-en"] { background: #c0392b; color: #fff; }
+    footer { margin-top: 3em; font-size: 0.8rem; color: #888; border-top: 1px solid #eee; padding-top: 12px; }
+  </style>
+</head>
+<body>
+
+<input type="radio" name="lang" id="lang-de" checked>
+<input type="radio" name="lang" id="lang-en">
+<div class="lang-toggle">
+  <label for="lang-de">Deutsch</label>
+  <label for="lang-en">English</label>
+</div>
+
+<div class="section-de" lang="de">
+  <h1>Daten löschen – Tabiji</h1>
+  <p>App „Tabiji – Japan-Reiseplaner“ (Google Play: de.tabiji.app). Anbieter: Tabiji – Andre Kapp, Eynattener Straße 2, 52064 Aachen, Deutschland.</p>
+
+  <p>Tabiji hat kein Nutzerkonto. Die meisten Daten liegen nur auf deinem Gerät, und du löschst sie selbst. Beim Anbieter liegen nur Kaufeinträge zur Lizenzprüfung; deren Löschung kannst du per E-Mail beantragen.</p>
+
+  <h2>1. Löschung beim Anbieter beantragen</h2>
+  <ol>
+    <li>Schreib eine E-Mail an <a href="mailto:japantravel.app.sorastudios@gmail.com">japantravel.app.sorastudios@gmail.com</a> mit dem Betreff „Datenlöschung Tabiji“.</li>
+    <li>Gib die Bestellnummer deines Kaufs an (beginnt mit „GPA.“, steht in der Kaufbestätigung von Google Play). Ohne sie lässt sich ein Kaufeintrag keiner Person zuordnen.</li>
+    <li>Du erhältst eine Bestätigung, sobald die Daten gelöscht sind – spätestens innerhalb eines Monats.</li>
+  </ol>
+
+  <h2>2. Welche Daten gelöscht oder aufbewahrt werden</h2>
+  <table>
+    <tr><th>Daten</th><th>Wo</th><th>Löschung</th></tr>
+    <tr><td>Kaufkennung (Purchase Token), Produkt-ID, Bestellnummer, Kauf- und Gültigkeitsstatus, Zeitpunkte</td><td>Server des Anbieters (Supabase, Frankfurt)</td><td>auf Antrag (Abschnitt 1). Aufbewahrt wird darüber hinaus nur, was gesetzliche Aufbewahrungspflichten verlangen. Hinweis: Solange die App mit diesem Kauf weiter genutzt wird, legt die Lizenzprüfung den Eintrag beim nächsten Abgleich neu an.</td></tr>
+    <tr><td>Absturz- und Leistungsberichte mit zufälliger Installationskennung</td><td>Sentry</td><td>automatisch nach spätestens 90 Tagen. Die Berichte enthalten keinen Namen und keine E-Mail-Adresse und lassen sich keiner Person zuordnen. Abschalten: App-Info → Rechtliches &amp; Quellen → „Diagnosedaten senden“.</td></tr>
+    <tr><td>Hashwert der IP-Adresse (Missbrauchsschutz)</td><td>Server des Anbieters</td><td>automatisch nach spätestens einem Tag.</td></tr>
+  </table>
+
+  <h2>3. Daten auf deinem Gerät selbst löschen</h2>
+  <p>Reisepläne, Ausgaben, Tagesplanung, Tagebuch, Fotos, Scratchmap und Einstellungen liegen nur auf deinem Gerät; der Anbieter hat keinen Zugriff. Sie werden gelöscht, wenn du die App deinstallierst oder unter Android-Einstellungen → Apps → Tabiji → Speicher → „Daten löschen“ wählst.</p>
+
+  <h2>4. Sicherung in Google Drive</h2>
+  <p>Hast du die optionale Sicherung genutzt, liegt sie in einem versteckten App-Ordner in deinem eigenen Google Drive; der Anbieter hat darauf keinen Zugriff. Trenne die Verbindung in der App unter Einstellungen, widerrufe den Zugriff unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> und lösche die Sicherung in Google Drive (Web) unter Einstellungen → Apps verwalten → Tabiji → „Versteckte App-Daten löschen“.</p>
+
+  <p>Weitere Informationen: <a href="privacy-policy.html">Datenschutzerklärung</a>.</p>
+</div>
+
+<div class="section-en" lang="en">
+  <h1>Delete your data – Tabiji</h1>
+  <p>App “Tabiji – Japan-Reiseplaner” (Google Play: de.tabiji.app). Provider: Tabiji – Andre Kapp, Eynattener Straße 2, 52064 Aachen, Germany.</p>
+
+  <p>Tabiji has no user account. Most data stays on your device only, and you delete it yourself. The provider only keeps purchase records for licence checks; you can request their deletion by e-mail.</p>
+
+  <h2>1. Request deletion from the provider</h2>
+  <ol>
+    <li>Send an e-mail to <a href="mailto:japantravel.app.sorastudios@gmail.com">japantravel.app.sorastudios@gmail.com</a> with the subject “Tabiji data deletion”.</li>
+    <li>Include the order number of your purchase (starts with “GPA.”, shown in the Google Play receipt). Without it, a purchase record cannot be linked to a person.</li>
+    <li>You receive a confirmation once the data is deleted – within one month at the latest.</li>
+  </ol>
+
+  <h2>2. What is deleted or kept</h2>
+  <table>
+    <tr><th>Data</th><th>Where</th><th>Deletion</th></tr>
+    <tr><td>Purchase token, product ID, order number, purchase and validity status, timestamps</td><td>Provider's server (Supabase, Frankfurt)</td><td>on request (section 1). Beyond that, only what statutory retention obligations require is kept. Note: as long as the app keeps being used with this purchase, the licence check creates the record again at its next check.</td></tr>
+    <tr><td>Crash and performance reports with a random installation ID</td><td>Sentry</td><td>automatically after 90 days at the latest. The reports contain no name or e-mail address and cannot be linked to a person. Switch off: App Info → Legal &amp; Sources → “Send diagnostic data”.</td></tr>
+    <tr><td>Hash of the IP address (abuse protection)</td><td>Provider's server</td><td>automatically after one day at the latest.</td></tr>
+  </table>
+
+  <h2>3. Delete data on your device yourself</h2>
+  <p>Trip plans, expenses, day plans, diary, photos, scratchmap and settings stay on your device only; the provider has no access. They are deleted when you uninstall the app or choose Android settings → Apps → Tabiji → Storage → “Clear data”.</p>
+
+  <h2>4. Google Drive backup</h2>
+  <p>If you used the optional backup, it is stored in a hidden app folder in your own Google Drive; the provider has no access. Disconnect it in the app under Settings, revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> and delete the backup in Google Drive (web) under Settings → Manage apps → Tabiji → “Delete hidden app data”.</p>
+
+  <p>More information: <a href="privacy-policy.html">Privacy policy</a>.</p>
+</div>
+
+<footer>
+  Tabiji · de.tabiji.app ·
+  <a href="mailto:japantravel.app.sorastudios@gmail.com">japantravel.app.sorastudios@gmail.com</a>
+</footer>
+
+</body>
+</html>

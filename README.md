@@ -7,7 +7,12 @@ Code, keine Daten, keine Schlüssel. Der App-Code liegt im privaten Repo
 
 | Datei | Quelle | Adresse |
 |---|---|---|
-| `privacy-policy.html` | `TravelCostCalculator/docs/privacy-policy.html` | `https://<konto>.github.io/tabiji-site/privacy-policy.html` |
+| `privacy-policy.html` | `TravelCostCalculator/docs/privacy-policy.html` | `https://andre5eichstaedt10-cell.github.io/tabiji-site/privacy-policy.html` |
+| `data-deletion.html` | hier gepflegt, Inhalt folgt der Datenschutzerklärung (§§ 3, 5, 6, 7, 10) | `https://andre5eichstaedt10-cell.github.io/tabiji-site/data-deletion.html` |
+
+`data-deletion.html` ist die Lösch-URL im Formular „Datensicherheit“ der Play
+Console. Ändert sich die Datenschutzerklärung (Speicherfristen, Dienste), diese
+Seite mit anpassen.
 
 ## Aktualisieren
 
